@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Now</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div style="background: blue;height: 50px;"> &nbsp; ≡  Menu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🏠︎  TollFree</div>
+    <img src="file:///C:/xampp/htdocs/phpprogram/phpproject/eci-logo.svg"><br>
+    <img style="width:1500px;height: 500px;" src="file:///C:/xampp/htdocs/phpprogram/phpproject/2rEFXb3Z7BOAx6G1706514283.jpg">
+    <span style="background: pink; height: 50px; width: 200px; display: inline-block; text-align: center; line-height: 20px;">
+        Myth Vs Reality
+    </span>
+    <span style="background: pink; height: 50px; width: 300px; display: inline-block; text-align: center; line-height: 20px;">
+        Maharashtra assembly elections
+    </span>
+    <span style="background: pink; height: 50px; width: 300px; display: inline-block; text-align: center; line-height: 20px;">
+        Jharkhand assembly elections
+    </span>
+    <span style="background: pink; height: 50px; width: 200px; display: inline-block; text-align: center; line-height: 20px;">
+        Photo Gallery
+    </span>
+    <span style="background: pink; height: 50px; width: 200px; display: inline-block; text-align: center; line-height: 20px;">
+        electors
+    </span>  
+    <br> 
+    <img style="width:225px;height: 150px;" src="Screenshot_7-11-2024_231528_www.eci.gov.in.jpeg">
+    <img style="width:225px;height: 150px;" src="Screenshot_9-11-2024_01452_www.eci.gov.in.jpeg">
+    <img style="width:225px;height: 150px;" src="Screenshot_9-11-2024_02924_www.eci.gov.in.jpeg">
+    <img style="width:225px;height: 150px;" src="Screenshot_9-11-2024_03048_www.eci.gov.in.jpeg">
+    <img style="width:225px;height: 150px;" src="Screenshot_9-11-2024_03120_www.eci.gov.in.jpeg">
+    <img style="width:225px;height: 150px;" src="Screenshot_9-11-2024_03150_www.eci.gov.in.jpeg"><form action="voter_services.php" method="POST">
+        <form action="voter_services.php" method="POST">
+            <label for="service">Select Service:</label>
+            <input type="text" id="service" name="service" placeholder="Enter service (e.g., register, check_status)" required>
+            <br><br>
+    
+            <!-- Common fields for each service -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+    
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <br><br>
+    
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact" required>
+            <br><br>
+    
+            <!-- Additional fields for registration and complaints -->
+            <label for="dob">Date of Birth (DD/MM/YYYY):</label>
+            <input type="text" id="dob" name="dob" placeholder="DD/MM/YYYY">
+            <br><br>
+    
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+            <br><br>
+    
+            <label for="complaint">Complaint:</label>
+            <input type="text" id="complaint" name="complaint">
+            <br><br>
+    
+            <button type="submit" name="submit">Submit</button>
+        </form>
+    <div class="container">
+        <h2>Cast Your Vote</h2>
+        <form id="voteForm">
+            <div class="form-group">
+                <label for="candidate">Select a Candidate</label>
+                <select id="candidate" name="candidate" required>
+                    <option value="candidate1">Candidate 1</option>
+                    <option value="candidate2">Candidate 2</option>
+                    <option value="candidate3">Candidate 3</option>
+                </select>
+            </div>
+            <button type="submit">Submit Vote</button>
+        </form>
+        <p id="voteMessage"></p>
+    </div>
+
+    <script src="vote.js"></script>
+</body>
+</html>
